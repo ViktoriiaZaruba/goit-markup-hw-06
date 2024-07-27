@@ -12,15 +12,13 @@ button{
 
 body{
     font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF; 
 }
  
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
     margin: -1px;
     border: 0;
-    padding: 0;
     white-space: nowrap;
     overflow: hidden;
   }
@@ -58,10 +56,18 @@ body{
     color: #2e2f42;
 }
 
+.menu-item:hover {
+    color: #404bbf;
+}
+.menu-item:focus {
+    color: #404bbf;
+}
+
 .menu-link {
 }
 
 .address-page {
+    font-style: normal;
 }
 
 .address-list {
@@ -72,15 +78,30 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    }
+
+.address-item {
+    color: #434455;
+}
+
+.address-item:hover {
+    color: #434455;
+}
+
+.address-item:active {
     color: #434455;
 }
 
 /*HERO*/
 
+.hero{
+    background-color: #2e2f42;
+}
+
 .hero-title {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
@@ -92,6 +113,15 @@ body{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    background-color: #4D5AE5;
+}
+
+.hero-priry-btn:focus {
+    #404BBF
+}
+
+.hero-priry-btn:hover {
+    #404BBF
 }
 
 /*features*/
@@ -118,17 +148,24 @@ body{
 
 /*our team*/
 
-#team {
+.team {
+    background-color: #F4F4FD;
+}
+
+.team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
 }
 
 .team-list {
+    background-color: #FFFFFF;
 }
+
 .team-item {
 }
 .team-image {
@@ -136,31 +173,34 @@ body{
 
 .team-subtitle {
     font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-text-align: center;
-color: #2e2f42;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 
 .team-text {
     font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-text-align: center;
-color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
 }
 
 /*our portfolio*/
 
-.portfolio {
+.portfolio{}
+
+.portfolio-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
 }
 
 .portfolio-list {
