@@ -91,7 +91,7 @@ body{
     color:#404bbf;
 }
 
-.address-item:active {
+.address-item:focus {
     color:#404bbf;
 }
 
@@ -152,7 +152,7 @@ body{
 /*our team*/
 
 .team {
-    background-color: #FFFFFF;
+    background-color: #F4F4FD;
 }
 
 .team-title {
