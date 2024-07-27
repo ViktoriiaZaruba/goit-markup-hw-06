@@ -53,13 +53,16 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.menu-link {
     color: #2e2f42;
 }
 
-.menu-item:hover {
+.menu-link:hover {
     color: #404bbf;
 }
-.menu-item:focus {
+.menu-link:focus {
     color: #404bbf;
 }
 
@@ -85,11 +88,11 @@ body{
 }
 
 .address-item:hover {
-    color: #434455;
+    color:#404bbf;
 }
 
 .address-item:active {
-    color: #434455;
+    color:#404bbf;
 }
 
 /*HERO*/
@@ -117,11 +120,11 @@ body{
 }
 
 .hero-priry-btn:focus {
-    #404BBF
+    background-color: #404BBF;
 }
 
 .hero-priry-btn:hover {
-    #404BBF
+    background-color: #404BBF;
 }
 
 /*features*/
@@ -149,7 +152,7 @@ body{
 /*our team*/
 
 .team {
-    background-color: #F4F4FD;
+    background-color: #FFFFFF;
 }
 
 .team-title {
