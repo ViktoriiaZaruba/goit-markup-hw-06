@@ -34,16 +34,17 @@ body{
 }
 
 .page-logo {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
+    color: #4d5ae5;
 }
 
 .page-logo-color{
-    color: #4d5ae5;
+    color: #2e2f42;
 }
 
 .menu {
@@ -187,13 +188,8 @@ color: #434455;
 
 /*footer*/
 
-.footer-logo{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.16667;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #2e2f42;
+.footer-logo-color{
+    color: #f4f4fd;
 }
 
 .footer-text {
