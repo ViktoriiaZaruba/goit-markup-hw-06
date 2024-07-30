@@ -237,6 +237,10 @@ img{
     width: calc((100% - 3 * 24px) / 4);   
 }
 
+.team-item:first-child{
+    border-radius: 0px 0px 4px 4px; 
+}
+
 .team-image {
     margin-bottom: 32px;
 }
@@ -279,7 +283,7 @@ img{
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-bottom: 8px;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -309,6 +313,7 @@ img{
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
