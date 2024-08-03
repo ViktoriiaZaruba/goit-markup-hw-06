@@ -59,6 +59,7 @@ img {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -97,14 +98,6 @@ img {
     gap: 40px;
 }
 
-.menu-item:focus,
-.menu-item:hover{
-    border-radius: 2px;
-    height: 4px;
-    width: 48px;
-    background: #404bbf;
-}
-
 .menu-link {
     color: #2e2f42;
     padding: 24px 0;
@@ -120,6 +113,23 @@ img {
 .menu-link:hover ,
 .menu-link:focus {
     color: #404bbf;
+}
+
+.menu-link-1 {
+    position: relative;
+    color: #404bbf;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-1::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .address-page {
@@ -140,12 +150,10 @@ img {
     letter-spacing: 0.02em;
     display: block;
     padding: 24px 0;
+    transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-item:hover {
-    color: #404bbf;
-}
-
+.address-item:hover,
 .address-item:focus {
     color: #404bbf;
 }
@@ -155,10 +163,11 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
 }
 
 .hero-title {
@@ -186,7 +195,7 @@ img {
     padding: 16px 32px;
     border: none;
     min-width: 169px;
-    transition: background-color 300ms ease;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .hero-priry-btn:hover,
@@ -271,7 +280,7 @@ img {
 }
 
 .team-info {
-    padding: 32px 16px;
+    padding: 32px 0;
 
 }
 
@@ -293,6 +302,11 @@ img {
     text-align: center;
     color: #434455;
     margin-bottom: 8px;
+}
+
+.team-info .icon-list{
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .icon-list {
@@ -323,7 +337,7 @@ img {
 
 .icon-link:hover,
 .icon-link:focus {
-    background-color: #31d0aa;
+    background-color: #404bbf;
 }
 
 .icon-icon {
@@ -368,6 +382,10 @@ img {
     background: #fff;
 }
 
+.portfolio-item:hover {
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+}
+
 .portfolio-item:hover .portfolio-image-text {
     transform: translateY(0%);
 }
@@ -387,10 +405,10 @@ img {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #4d5ae5;
-    padding: 32px 40px;
+    padding: 40px 32px;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 300ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-info {
@@ -482,4 +500,20 @@ img {
     justify-content: flex-start;
     flex-direction: row;
     gap: 16px;
+}
+
+.footer-icon-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:#4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: #31d0aa;
 }
