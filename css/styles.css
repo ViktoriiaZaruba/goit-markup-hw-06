@@ -635,8 +635,12 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal-close:hover .modal-close-btn{
+    background-color: #404BBF;
+    border: none;
+}
+
+.modal-close:focus .modal-close-btn{
     background-color: #404BBF;
     border: none;
 }
@@ -645,7 +649,11 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close:hover .modal-close-btn,
+.modal-close:hover .modal-close-btn {
+    fill: #ffffff;
+}
+
+
 .modal-close:focus .modal-close-btn {
     fill: #ffffff;
 }
@@ -678,11 +686,11 @@ img {
     border-color: #4D5AE5;
 }
 
-.modal-input:focus+.modal-icons {
+.modal-input:focus .modal-icons {
     fill: #4D5AE5;
 }
 
-.modal-input:hover+.modal-icons {
+.modal-input:hover .modal-icons {
     fill: #4D5AE5;
 }
 
@@ -778,7 +786,7 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-check:checked+.modal-check-text-span {
+input:checked + label > span {
     border-radius: 2px;
     fill: #F4F4FD;
     border: 1px solid #404bbf;
@@ -786,14 +794,6 @@ img {
     border: none;
 }
 
-input:focus-within,
-textarea:focus-within {
-    background-color: #4D5AE5;
-}
-
-input:focus-within+.svg-input {
-    fill: #4D5AE5;
-}
 
 .privacy-policy {
     color: #4d5ae5;
