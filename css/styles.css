@@ -73,6 +73,7 @@ picture {
 .header-container {
     display: flex;
     align-items: center;
+    padding: 16px;
 }
 
 .page-navigation {
@@ -92,9 +93,7 @@ picture {
 
 .header-logo {
     display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 32px;
-    margin-right: 76px;
+    margin-right: 152px;
 }
 
 .page-logo-color {
@@ -140,7 +139,7 @@ picture {
 }
 
 .address-page {
-   display: none;
+    display: none;
 }
 
 .address-list {
@@ -165,10 +164,107 @@ picture {
 }
 
 .menu-open-btn {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border: none;
 }
 
+.menu-open-btn>.icon-icon {
+    fill: #2F2F37;
+}
+
+.mob-menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 584px;
+    background-color: #fff;
+    z-index: 1;
+    padding: 7.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mob-close-btn {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 85%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-close-btn:hover,
+.mob-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.mob-close-btn:hover .mob-close,
+.mob-close-btn:focus .mob-close {
+    fill: #ffffff;
+}
+
+.mob-menu-ul {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.mob-menu-item>.mob-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mob-menu-item:first-child>.mob-menu-link {
+    color: #404bbf;
+}
+
+.mob-menu-div {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.mob-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mob-address-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.mob-address-list-item:first-child>.mob-address-item {
+    color: #4d5ae5;
+}
+
+.mib-icon-list {
+    display: flex;
+    gap: 40px;
+}
 
 /*-------------------HERO---------------------------*/
 
@@ -195,7 +291,9 @@ picture {
 }
 
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hiro-f-2.png);
     }
@@ -464,20 +562,21 @@ picture {
 /*----------------------footer-------------------------*/
 .footer {
     font-family: "Roboto", sans-serif;
-    padding: 96px 16px;
     background-color: #2e2f42;
 }
 
 .footer-container {
     align-items: baseline;
+    padding: 96px 16px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+    justify-content: center;
 }
 
 .footer-info {
-    margin-right: 80px;
-}
-
-.footer-container {
-    display: flex;
+    text-align: center;
 }
 
 .footer-logo-color {
@@ -497,13 +596,15 @@ picture {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    max-width: 264px;
+    max-width: 288px;
+    align-items: flex-start;
 }
 
 .footer-soc {
     display: block;
     width: 208px;
     height: 80px;
+    text-align: center;
 }
 
 .footer-soc-title {
@@ -539,14 +640,12 @@ picture {
     background-color: #31d0aa;
 }
 
-.footer-form-div {
-    margin-left: 40px;
-}
-
 .footer-form {
-    width: 453px;
+    width: 288px;
     height: 80px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
@@ -626,8 +725,8 @@ picture {
 }
 
 .modal {
-    width: 408px;
-    height: 584px;
+    width: 288px;
+    height: 623px;
     position: absolute;
     background: #fcfcfc;
     top: 50%;
@@ -707,7 +806,7 @@ picture {
 }
 
 .modal-field-wrap {
-    width: 360px;
+    width: 100%;
     height: 40px;
     position: relative;
 }
@@ -748,7 +847,7 @@ picture {
 }
 
 .modal-field-for {
-    width: 360px;
+    width: 100%;
     min-height: 138px;
     margin-bottom: 16px;
 }
@@ -875,11 +974,17 @@ picture {
         display: none;
     }
 
-    .hero{
+    .mob-menu {
+        display: none;
+    }
+
+    .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hiro-p.png);
     }
 
-    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hiro-p-2.png);
         }
@@ -927,16 +1032,69 @@ picture {
         gap: 48px 24px;
     }
 
-    .portfolio-info{
+    .portfolio-info {
         width: 340px;
     }
 
-    .footer {
+    .footer-container {
+        width: 768px;
         padding: 96px 108px;
+        gap: 24px 72px;
     }
+
+    .footer-info {
+        text-align: start;
+    }
+
+
+    .footer-soc {
+        text-align: start;
+    }
+
+    .footer-form-div {
+        text-align: start;
+    }
+
+    .footer-form {
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 453px;
+    }
+
+    .modal {
+        height: 584px;
+        width: 408px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
+
+    .page-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-container {
+        width: 768px;
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .header-logo {
+        margin-right: 104px;
+    }
+
+    .address-list {
+        margin-left: 104px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .address-item {
+        padding: 0;
+    }
 
     .team {
         height: 1224px;
@@ -948,8 +1106,7 @@ picture {
         padding-right: 0;
     }
 
-    .footer>.container {
-        max-width: 552px;
+    .footer > .container {
         display: flex;
         flex-wrap: wrap;
         gap: 72px 24px;
@@ -965,11 +1122,18 @@ picture {
         padding-right: 15px;
     }
 
-    .hero{
+    .header-logo {
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpg);
     }
 
-    @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name-2.png);
         }
@@ -1033,15 +1197,30 @@ picture {
         width: calc((100% - 2 * 24px) / 3);
     }
 
-    .portfolio-info{
+    .portfolio-info {
         width: 360px;
     }
 
-
-   .footer { 
+    .footer-container {
         padding-top: 100px;
         padding-bottom: 100px;
-        padding-left: 159pt;
+        padding-left: 156px;
         padding-right: 159px;
+        width: 100%;
+        flex-wrap: nowrap;
+        gap: 0;
     }
+
+    .footer-info {
+        margin-right: 120px;
+    }
+
+    .footer-text {
+        width: 264px;
+    }
+
+    .footer-form-div {
+        margin-left: 80px;
+    }
+
 }
